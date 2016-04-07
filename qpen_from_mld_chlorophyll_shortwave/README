@@ -1,0 +1,10 @@
+Installation :
+		unzip Qpen-From-MLD-CHL-and-Shortwave-master.zip
+		cd Qpen-From-MLD-CHL-and-Shortwave-master/qpen_from_mld_chl_shortwave
+		make
+		make install
+
+		qpen_from_mld_chl_shortwave --version
+		qpen_from_mld_chl_shortwave --help
+
+
