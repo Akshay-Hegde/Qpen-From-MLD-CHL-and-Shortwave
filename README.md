@@ -1,13 +1,13 @@
 #Utility to Calculate Qpen from Mixed Layer Depth, Chlorophyll and shortwave
 
-###Installation
+### Installation
 
-#####Become root user
+##### Become root user
 ```
 [akshay@localhost tmp]$ su 
 Password: 
 ```
-#####Extract compressed file
+##### Extract compressed file
 ```
 [root@localhost tmp]# unzip Qpen-From-MLD-CHL-and-Shortwave-master.zip
 README.md
@@ -17,27 +17,27 @@ qpen_from_mld_chl_shortwave/qpen_from_mld_chl_shortwave_debug.c
 qpen_from_mld_chl_shortwave/README 
 ```
 
-#####Go to qpen_from_mld_chl_shortwave directory
+##### Go to qpen_from_mld_chl_shortwave directory
 
 ```
 [root@localhost tmp]# cd qpen_from_mld_chl_shortwave
 ```
 
-#####Compile & install
+##### Compile & install
 
 ```
 [root@localhost qpen_from_mld_chl_shortwave]# make 
 [root@localhost qpen_from_mld_chl_shortwave]# make install 
 ```
 
-#####Version
+##### Version
 
 ```
 [root@localhost qpen_from_mld_chl_shortwave]# qpen_from_mld_chl_shortwave --version
 Rev 1.0.0 (Thu Jun 11 16:41:38 UTC 2015)
 ```
 
-#####Help
+##### Help
 
 ```
 [root@localhost qpen_from_mld_chl_shortwave]# qpen_from_mld_chl_shortwave --help
@@ -66,23 +66,23 @@ Examples :
          If you find any bugs report to ahegde@nio.org / akshay.k.hegde@gmail.com
 ``` 
 
-###Usage
+### Usage
 
-#####Usage with long options
+##### Usage with long options
 
 ```
 [root@localhost qpen_from_mld_chl_shortwave]# qpen_from_mld_chl_shortwave   --mld=6.69425 --chl=0.19175 --shortwave=238.4
 46.1120550163
 ``` 
 
-#####Usage with short options
+##### Usage with short options
 
 ```
 [root@localhost qpen_from_mld_chl_shortwave]# qpen_from_mld_chl_shortwave   -m 6.69425 -c 0.19175 -s 238.4
 46.1120550163
 ```
 
-#####Calculation using file
+##### Calculation using file
 
 ```
 [akshay@localhost tmp]$ cat file.txt 
@@ -95,7 +95,7 @@ MLD	CHL	Shortwave
 12.9831	0.178281	252.4
 ``` 
 
-#####Write simple bash script something like this
+##### Write simple bash script something like this
 
 ```
 [akshay@localhost tmp]$ cat run.sh 
@@ -108,7 +108,7 @@ i=$((i+1))
 done < file.txt
 ``` 
 
-#####Execute
+##### Execute
 
 ```
 [akshay@localhost tmp]$ bash run.sh 
