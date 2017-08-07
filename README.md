@@ -1,4 +1,4 @@
-# Utility to Calculate Qpen from Mixed Layer Depth, Chlorophyll and shortwave
+## Utility to Calculate Qpen from Mixed Layer Depth, Chlorophyll and shortwave
 
 ### Installation
 
